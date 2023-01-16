@@ -5,30 +5,36 @@ const Filter = ({
   setAllEmails,
   setReadEmails,
   setUnreadEmails,
+  emailData,
+  setEmailData,
 }) => {
   const showFavorites = () => {
     setFavoriteEmails(true);
     setAllEmails(false);
     setReadEmails(false);
     setUnreadEmails(false);
+    setEmailData({});
   };
   const showAllEmails = () => {
     setAllEmails(true);
     setFavoriteEmails(false);
     setReadEmails(false);
     setUnreadEmails(false);
+    setEmailData({});
   };
   const showReadEmails = () => {
     setReadEmails(true);
     setAllEmails(false);
     setFavoriteEmails(false);
     setUnreadEmails(false);
+    setEmailData({});
   };
   const showUnreadEmails = () => {
     setUnreadEmails(true);
     setReadEmails(false);
     setAllEmails(false);
     setFavoriteEmails(false);
+    setEmailData({});
   };
   return (
     <div className="filter">

@@ -5,13 +5,20 @@ import EmailOverview from "./EmailOverview";
 import EmailDescription from "./EmailDescription";
 
 const _ = require("lodash");
-const EmailList = ({ favoriteEmails, allEmails, readEmails, unreadEmails }) => {
+const EmailList = ({
+  favoriteEmails,
+  allEmails,
+  readEmails,
+  unreadEmails,
+  emailData,
+  setEmailData,
+}) => {
   console.log(
     "🚀 ~ file: EmailList.js:9 ~ EmailList ~ unreadEmails",
     unreadEmails
   );
   const [emails, setEmails] = useState("");
-  const [emailData, setEmailData] = useState("");
+
   const fetchEmails = async () => {
     const emailResponse = await fetch("https://flipkart-email-mock.now.sh/");
     const fetchedEmails = await emailResponse.json();
