@@ -59,7 +59,7 @@ const EmailList = ({
           _.map(emailsToDisplay, (email) => {
             return (
               <li type="none" key={email.id} onClick={() => getData(email)}>
-                <EmailOverview email={email} />
+                <EmailOverview email={email} emailData={emailData} />
               </li>
             );
           })

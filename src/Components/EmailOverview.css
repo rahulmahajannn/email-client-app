@@ -25,3 +25,13 @@
 .dateAndFavoriteDiv {
     display: flex;
 }
+
+.readDiv {
+    background-color: #E1E4EA;
+}
+
+.highlightedDiv {
+    border: #E54065 solid 1px;
+    background-color: #fff;
+}
+

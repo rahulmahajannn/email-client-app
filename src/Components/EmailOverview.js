@@ -1,11 +1,19 @@
 import "./EmailOverview.css";
 
-const EmailOverview = ({ email }) => {
+const EmailOverview = ({ email, emailData }) => {
   console.log("🚀 ~ file: EmailOverview.js:4 ~ EmailOverview ~ email", email);
   const profileImageUrl = `https://ui-avatars.com/api/?name=${email.from.name}&length=1&background=E54065&rounded=true&color=fff&size=50`;
 
+  console.log(
+    "🚀 ~ file: EmailOverview.js:11 ~ EmailOverview ~ emailData",
+    emailData
+  );
   return (
-    <div className="emailContainer">
+    <div
+      className={`emailContainer ${
+        emailData.id == email.id ? "highlightedDiv" : undefined
+      } ${email.isRead ? "readDiv" : undefined}`}
+    >
       <div className="imageContainer">
         <img src={profileImageUrl} />
       </div>
