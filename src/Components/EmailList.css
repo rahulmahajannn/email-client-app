@@ -1,0 +1,7 @@
+.emailList {
+    display: flex;
+}
+
+.emailOverview {
+    width: 90%;
+}

@@ -1,0 +1,21 @@
+.filterButton {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    margin: auto;
+}
+
+.filterButton:active {
+    border: black;
+    
+    background-color: #E1E4EA;
+}
+
+.filter {
+    display: flex;
+    width: 20%;
+    /* flex-direction: column; */
+}

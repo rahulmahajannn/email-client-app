@@ -1,0 +1,27 @@
+.emailContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    border: solid 1px #CFD2DC;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.favoriteText {
+    color: #E54065;
+    margin-left: 60px;
+}
+
+.dateAndFavoriteDiv {
+    display: flex;
+}
