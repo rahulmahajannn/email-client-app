@@ -1,6 +1,31 @@
+.readArea {
+    background-color: #F2F2F2;
+    border: #CFD2DC solid 1px;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contentContainer {
+    display: flex;
+    padding: 10px;
+}
+
+.firstContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameContainer {
+    font-weight: 200;
+    font-weight: bold;
+    font-size: x-large;
+}
+
 .favoriteButton {
     background-color: #E54065;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
     border: none;
     color: #fff;
 }

@@ -4,6 +4,7 @@
   color: #636363;
   display: flex;
   flex-direction: column;
+  padding: 2%;
 }
 
 .App-logo {

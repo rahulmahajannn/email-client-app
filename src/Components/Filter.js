@@ -38,19 +38,18 @@ const Filter = ({
   };
   return (
     <div className="filter">
-      <div>Filter By:</div>
-      <button className="filterButton" onClick={showAllEmails}>
+      <div className="filterButton" onClick={showAllEmails}>
         All Emails
-      </button>
-      <button className="filterButton" onClick={showUnreadEmails}>
+      </div>
+      <div className="filterButton" onClick={showUnreadEmails}>
         Unread
-      </button>
-      <button className="filterButton" onClick={showReadEmails}>
+      </div>
+      <div className="filterButton" onClick={showReadEmails}>
         Read
-      </button>
-      <button className="filterButton" onClick={showFavorites}>
+      </div>
+      <div className="filterButton" onClick={showFavorites}>
         Favorites
-      </button>
+      </div>
     </div>
   );
 };

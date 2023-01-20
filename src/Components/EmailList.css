@@ -1,7 +1,9 @@
 .emailList {
     display: flex;
+    justify-content: center;
 }
 
 .emailOverview {
-    width: 90%;
+   min-width: 40%;
+   width: 90%;
 }

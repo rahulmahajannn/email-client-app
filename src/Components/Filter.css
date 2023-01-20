@@ -17,5 +17,6 @@
 .filter {
     display: flex;
     width: 20%;
+    margin-bottom: 20px;
     /* flex-direction: column; */
 }

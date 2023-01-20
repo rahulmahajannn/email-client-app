@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./EmailDescription.css";
 
 const _ = require("lodash");
@@ -22,15 +21,15 @@ const EmailDescription = ({ emailBody, emailInfo, setEmails, emails }) => {
     setEmails(updatedEmail);
   }
   return (
-    <>
+    <div className="readArea">
       <div>
         <div className="imageContainer">
           <img src={profileImageUrl} />
         </div>
       </div>
-      <div>
-        <div>
-          {emailInfo.from.name}
+      <div className="contentContainer">
+        <div className="firstContainer">
+          <div className="nameContainer">{emailInfo.from.name}</div>
           {emailInfo.isFavorite ? (
             <button
               className="favoriteButton"
@@ -52,10 +51,16 @@ const EmailDescription = ({ emailBody, emailInfo, setEmails, emails }) => {
             </button>
           )}
         </div>
-        <div>{new Date(emailInfo.date).toUTCString()}</div>
+        <div>
+          {new Date(emailInfo.date).toLocaleDateString()}{" "}
+          {new Date(emailInfo.date).toLocaleTimeString("en-US", {
+            hour: "2-digit",
+            minute: "2-digit",
+          })}
+        </div>
         <div dangerouslySetInnerHTML={{ __html: body }} />
       </div>
-    </>
+    </div>
   );
 };
 
